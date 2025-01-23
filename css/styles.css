@@ -716,7 +716,7 @@ img {
 }
 
 .form-custom-checkbox {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 

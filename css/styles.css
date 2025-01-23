@@ -532,8 +532,8 @@ img {
   height: 100%;
 
   background: rgba(46, 47, 66, 0.4);
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
 
   transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms visibility cubic-bezier(0.4, 0, 0.2, 1);
 }

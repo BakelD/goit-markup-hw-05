@@ -738,9 +738,6 @@ img {
   background-color: var(--hover-color);
   color: var(--pale-bg-color);
   fill: var(--pale-bg-color);
-}
-
-.form-checkbox:checked {
   border: none;
 }
 

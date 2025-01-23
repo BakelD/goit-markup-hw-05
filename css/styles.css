@@ -713,7 +713,7 @@ img {
 }
 
 .form-custom-checkbox {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
@@ -737,6 +737,11 @@ img {
 .form-checkbox:checked + .form-checkbox-label .form-custom-checkbox {
   background-color: var(--hover-color);
   color: var(--pale-bg-color);
+  fill: var(--pale-bg-color);
+}
+
+.form-checkbox:checked {
+  border: none;
 }
 
 .form-btn-submit {
@@ -748,6 +753,7 @@ img {
   height: 56px;
 
   font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   background: var(--accent-color);
   color: var(--white-color);

@@ -493,7 +493,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 
   padding: 8px 24px;
   min-width: 165px;
@@ -515,6 +514,10 @@ img {
 .footer-form-btn-submit:hover,
 .footer-form-btn-submit:focus {
   background-color: var(--hover-color);
+}
+
+.footer-form-icon {
+  margin-left: 16px;
 }
 
 /* ---------------------------- modal ----------------------------*/

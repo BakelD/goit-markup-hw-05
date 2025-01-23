@@ -652,6 +652,8 @@ img {
   left: 16px;
 
   transform: translateY(-50%);
+
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-comment-wrapper {
@@ -671,7 +673,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  outline: none;
+  outline: transparent;
 
   transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
@@ -722,6 +724,10 @@ img {
   border-radius: 2px;
 
   color: transparent;
+  fill: transparent;
+
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1), 250ms border cubic-bezier(0.4, 0, 0.2, 1),
+    250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-custom-checkbox-icon {

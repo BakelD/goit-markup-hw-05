@@ -530,9 +530,10 @@ img {
 
   background: rgba(46, 47, 66, 0.4);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 
-  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1), 250ms visibility cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -547,13 +548,15 @@ img {
   transform: translate(-50%, -50%);
 
   width: 408px;
-  /* height: 584px; */
+  min-height: 584px;
   padding: 24px;
   padding-top: 72px;
 
   background: var(--modal-bg-color);
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-close {
@@ -561,22 +564,34 @@ img {
   top: 24px;
   right: 24px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
   background-color: var(--pale-color);
   color: var(--dark-color);
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1), 250ms border cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
   background-color: var(--hover-color);
   color: var(--white-color);
+  border: none;
 }
 
 .modal-btn-close-icon {
   fill: currentColor;
+
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-slogan {

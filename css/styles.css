@@ -465,10 +465,11 @@ img {
   color: var(--white-color);
 }
 
-.footer-form-field-wrapper {
+.footer-form {
   display: flex;
   gap: 24px;
 }
+
 .footer-form-field {
   width: 264px;
   height: 40px;

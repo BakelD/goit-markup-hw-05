@@ -583,12 +583,9 @@ img {
 
 /* ---------------------------- form ----------------------------*/
 
-.form-field-wrapper {
-  margin-bottom: 8px;
-}
-
 .form-field {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .form-field-label {

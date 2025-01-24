@@ -698,7 +698,7 @@ img {
 }
 
 .form-checkbox-label {
-  display: flex;
+  display: inline-flex;
   gap: 8px;
 
   margin-bottom: 24px;
